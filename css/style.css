@@ -5,6 +5,10 @@ body {
   background-color: rgb(21, 22, 26);
   color: #333; margin: 0;}
 
+p {
+  font-family: Source Sans Pro;
+}
+
 a{
   color:#333;text-decoration: none; 
 }
