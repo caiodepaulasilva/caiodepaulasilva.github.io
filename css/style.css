@@ -8,7 +8,7 @@
     }
     
     p {
-        font-family: Source Sans Pro;
+        font-family: 'Source Sans Pro';
     }
     
     a {
@@ -48,14 +48,18 @@
         background-color: #fff;
     }
     
-    #card-one {
-        min-height: 200px;
-        min-width: 300px;
+    @media screen and (min-width: 800px) {
+        #card-one {
+            min-height: 200px;
+            min-width: 350px;
+        }
     }
     
-    #card-one-append {
-        min-height: 185px;
-        min-width: 300px;
+    @media screen and (min-width: 800px) {
+        #card-one-append {
+            min-height: 185px;
+            min-width: 350px;
+        }
     }
     
     @media screen and (min-width: 800px) {
@@ -63,17 +67,6 @@
             min-height: 520px;
             min-width: 350px;
         }
-    }
-    
-    .title-principal {
-        font-family: 'Poppins', sans-serif;
-        color: #444;
-        margin: 0;
-        padding: 0px 0px 6px 0px;
-        font-size: 30px;
-        line-height: 44px;
-        letter-spacing: -2px;
-        font-weight: bold;
     }
     
     .profile {
@@ -117,10 +110,34 @@
         border-radius: 5px;
     }
     
-    h4 {
+    .title-principal-profile {
+        font-family: 'Poppins', sans-serif;
+        color: #444;
+        margin: 0;
+        padding: 0px 0px 4px 0px;
+        font-size: 27px;
+        line-height: 44px;
+        letter-spacing: -2px;
+        font-weight: bold;
+    }
+    
+    .title-secondary-profile {
+        font-family: 'Poppins', sans-serif;
+        color: #444;
+        margin: 0;
+        padding: 0px 0px 4px 0px;
+        font-size: 19px;
+        line-height: 15px;
+        letter-spacing: -2px;
+    }
+    
+    .title-principal-publications {
+        font-family: 'Source Sans Pro';
         padding-top: 12px;
         margin: 0px;
     }
+    
+    .title-secondary-publications {}
     
     .row-publications {
         width: 100%;
