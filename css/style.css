@@ -1,113 +1,129 @@
-body {
-  font-family: Source Sans Pro;
-  text-align: center; 
-  line-height: 1.2em; 
-  background-color: rgb(21, 22, 26);
-  color: #333; margin: 0;}
-
-p {
-  font-family: Source Sans Pro;
-}
-
-a{
-  color:#333;text-decoration: none; 
-}
-
-a:hover{
-  color: initial; /* Takes initial value of the property which is black in this case */
-}
-
-.main-body {
-  padding: 15px;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 450px;
-  max-width: 500px;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;    
-  border-radius: .25rem;
-}
-
-.card p{
-  margin: 20px;
-  line-height: 1.3em;
-  font-size: 1.1em;
-  font-weight: normal;
-  text-align: justify;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid-child {
-  flex: 1;
-  padding: 0 20px 20px 20px;
-  background-color: #fff;
-}  
-
-.title-principal{  
-  font-family: 'Poppins', sans-serif;
-  font-size: 26px;
-  font-weight: 500;
-  color: #F1C40F;
-}
-.title-secondary{
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: #333;
-}
-
-.profile {
-  font-family: 'Open Sans', Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 75%;
-  width: 100%;
-  color: #000;
-  text-align: left;
-  font-size: 16px;
-  background: #fff;
-  border-radius: 5px;
-}
-
-.profile *,
-.profile:before,
-.profile:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.profile p {
-  margin: 0;
-  line-height: 1.3em;
-  font-size: 1.3em;
-  font-weight: normal;
-}
-
-.profile img {
-  max-width: 40%;
-  margin-left:85%;  
-  backface-visibility: hidden;
-  vertical-align: top;
-  border-radius: 5px;
-}
-
-.profile figcaption {
-  position: absolute;
-  top: 0;  
-  bottom: 0;
-  padding: 15px;
-}
+    body {
+        font-family: Source Sans Pro;
+        text-align: center;
+        line-height: 1.2em;
+        background-color: rgb(21, 22, 26);
+        color: #333;
+        margin: 0;
+    }
+    
+    p {
+        font-family: Source Sans Pro;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: initial;
+        /* Takes initial value of the property which is black in this case */
+    }
+    
+    .main-body {
+        padding: 15px;
+    }
+    
+    .card p {
+        margin: 20px;
+        line-height: 1.3em;
+        font-size: 1.1em;
+        font-weight: normal;
+        text-align: justify;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            min-width: 10%;
+        }
+    }
+    
+    .grid-child {
+        flex: 1;
+        padding: 5px 15px 15px 15px;
+        background-color: #fff;
+    }
+    
+    #card-one {
+        min-height: 200px;
+        min-width: 300px;
+    }
+    
+    #card-one-append {
+        min-height: 185px;
+        min-width: 300px;
+    }
+    
+    @media screen and (min-width: 800px) {
+        #card-two {
+            min-height: 520px;
+            min-width: 350px;
+        }
+    }
+    
+    .title-principal {
+        font-family: 'Poppins', sans-serif;
+        color: #444;
+        margin: 0;
+        padding: 0px 0px 6px 0px;
+        font-size: 30px;
+        line-height: 44px;
+        letter-spacing: -2px;
+        font-weight: bold;
+    }
+    
+    .profile {
+        display: inline-block;
+        width: 80%;
+        text-align: left;
+        background: #fff;
+        border-radius: 5px;
+    }
+    
+    .profile *,
+    .profile:before,
+    .profile:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    
+    .profile figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding: 15px;
+    }
+    
+    #photo {
+        max-width: 50%;
+        margin-left: 70%;
+        backface-visibility: hidden;
+        vertical-align: top;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
+    #playstore {
+        width: 60%;
+        margin-right: 2%;
+        float: right;
+        backface-visibility: hidden;
+        border-radius: 5px;
+    }
+    
+    h4 {
+        padding-top: 12px;
+        margin: 0px;
+    }
+    
+    .row-publications {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+    }
